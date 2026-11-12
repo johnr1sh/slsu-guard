@@ -1,4 +1,4 @@
-<p align="center"> <img src="slsu-logo-horizontal.png" alt="Southern Leyte State University" width="420"> </p> <h1 align="center">GUARD++</h1> <p align="center"><strong>SLSU Examination Integrity</strong> &middot; Version 1.0.0.4</p>
+<p align="center"> <img src="slsu-logo-bg.png" alt="Southern Leyte State University" width="420"> </p> <h1 align="center">GUARD++</h1> <p align="center"><strong>SLSU Examination Integrity</strong> &middot; Version 1.0.0.4</p>
 
 # GUARD++ — Version 1.0.0.3
 
