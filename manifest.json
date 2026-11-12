@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "GUARD++ | SLSU Exam Integrity",
   "short_name": "GUARD++",
-  "version": "1.0.0.3",
-  "description": "Transparent exam-integrity companion for SLSU Moodle quizzes: restricts AI and answer sites, disables copy/paste during an attempt, and keeps a local activity report.",
+  "version": "1.0.0.4",
+  "description": "Student-created exam-integrity tool for SLSU Moodle quizzes. Not an official SLSU administration system.",
   "permissions": [
     "storage",
     "tabs",
@@ -93,5 +93,5 @@
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'"
   },
-  "version_name": "1.0.0.3"
+  "version_name": "1.0.0.4"
 }

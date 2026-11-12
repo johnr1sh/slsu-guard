@@ -6,7 +6,7 @@
 // so manifest.json host_permissions stay in sync with this file.
 
 const GUARD_CONFIG = Object.freeze({
-  version: "1.0.0.3",
+  version: "1.0.0.4",
 
   // The only site GUARD++ activates on. Works for ANY quiz on this LMS.
   lmsOrigin: "https://lms.southernleytestateu.edu.ph",

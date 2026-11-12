@@ -451,8 +451,22 @@ async function resync() {
   chrome.alarms.create(WATCHDOG_ALARM, { periodInMinutes: 1 });
   if (C.uninstallUrl) { try { chrome.runtime.setUninstallURL(C.uninstallUrl); } catch (_) {} }
 }
-chrome.runtime.onStartup.addListener(() => resync().catch(console.error));
-chrome.runtime.onInstalled.addListener(() => resync().catch(console.error));
+// A quiz attempt that was already open when the extension was installed, reloaded or the browser
+// restarted never fires webNavigation.onCommitted, so look for it explicitly.
+async function adoptOpenAttemptTabs() {
+  const tabs = await chrome.tabs.query({ url: `${C.lmsOrigin}/*` });
+  for (const tab of tabs) {
+    if (!tab.url || classify(tab.url)?.kind !== "attempt") continue;
+    await handleLmsNavigation(tab.url, tab.id);
+  }
+}
+
+async function startup() {
+  await resync();
+  await adoptOpenAttemptTabs();
+}
+chrome.runtime.onStartup.addListener(() => startup().catch(console.error));
+chrome.runtime.onInstalled.addListener(() => startup().catch(console.error));
 
 /* ---------- Messages ---------- */
 

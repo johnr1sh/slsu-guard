@@ -1,5 +1,7 @@
 # GUARD++ Privacy and Responsible Use
 
+> GUARD++ is a student-created project, not an official SLSU administration system. Records stay in the browser on your own device.
+
 GUARD++ is designed for visible, authorized use during Moodle quiz attempts at SLSU. A small label on the quiz page tells students it is active.
 
 ## Data stored locally (browser extension storage only)
