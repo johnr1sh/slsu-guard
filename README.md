@@ -1,6 +1,10 @@
-<p align="center"> <img src="slsu-logo-bg.png" alt="Southern Leyte State University" width="420"> </p> <h1 align="center">GUARD++</h1> <p align="center"><strong>SLSU Examination Integrity</strong> &middot; Version 1.0.0.4</p>
+<p align="center">
+  <img src="guard-logo.png" alt="GUARD++ - SLSU Examination Integrity" width="420">
+</p>
 
-# GUARD++ — Version 1.0.0.3
+<p align="center"><strong>SLSU Examination Integrity</strong> &middot; Version 1.0.0.4</p>
+
+> **Disclaimer:** GUARD++ is a **student-created project**. It is **not an official system of the SLSU administration** and was not developed or operated by the university. The SLSU name and seal are used only to identify the school it was made for.
 
 Chrome Manifest V3 extension for authorized integrity monitoring of Moodle quizzes on
 `lms.southernleytestateu.edu.ph`. Works for **any** quiz; nothing is tied to a quiz ID.
@@ -17,7 +21,7 @@ Proprietary — see LICENSE and NOTICE. Keep this source private.
 
 3 restricted-site attempts flags a session for **human review**. Nothing is penalised automatically.
 
-## Hardening added in 1.0.0.3
+## Hardening added in 1.0.0.4
 
 - **Hard block instead of alerts:** notifications and toasts removed (and the `notifications` permission). Sub-resources of blocked sites are blocked at the network layer, so tabs that were already open stop working too.
 - **Tamper evidence:** `MONITORING_GAP` is logged if monitoring is interrupted (extension disabled, browser closed) during an attempt; blocking rules are re-checked every minute and restored (`RULES_RESTORED`) if they go missing.
@@ -25,7 +29,7 @@ Proprietary — see LICENSE and NOTICE. Keep this source private.
 - **Stronger page enforcement:** listeners attach at window level (ahead of page scripts); text that appears without any keyboard/paste input is flagged (`PROGRAMMATIC_TEXT_CHANGE`); automation flag and multi-display detection.
 - **Message hardening:** content messages accepted only from the top frame of the protected attempt; destructive actions only from extension pages; explicit extension-page CSP.
 - Optional `uninstallUrl` hook (opens a page when the extension is removed).
-- Version is `1.0.0.3`. Edit `config.js`, then run `node tools/sync-manifest.js`.
+- Version is `1.0.0.4`. Edit `config.js`, then run `node tools/sync-manifest.js`.
 
 ## Can students uninstall it?
 
