@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="guard-logo.png" alt="GUARD++ - SLSU Examination Integrity" width="420">
+  <img src="slsu-logo-bg.png" alt="GUARD++ - SLSU Examination Integrity" width="420">
 </p>
 
 <p align="center"><strong>SLSU Examination Integrity</strong> &middot; Version 1.0.0.4</p>
