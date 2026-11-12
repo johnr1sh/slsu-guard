@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GUARD++ | Restricted website</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/icon32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/icon16.png">
+  <link rel="apple-touch-icon" href="icons/icon128.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="blocked-page">
+  <main class="blocked-card">
+    <img src="slsu-logo.png" alt="Southern Leyte State University seal">
+    <div class="institution">Southern Leyte State University - Hinunangan Campus</div>
+    <div class="rule"></div>
+    <div class="warning-symbol">!</div>
+    <h1 style="color: red;">Access denied.</h1>
+    <p class="lead">This website is not permitted while your quiz attempt is in progress.</p>
+    <p class="body-copy" id="strikeInfo" role="status"></p>
+    <div class="notice">AI assistants and answer-sharing sites are restricted for this examination. This attempt may be recorded in the session activity report.</div>
+    <div class="actions">
+      <button id="proceedBtn" class="primary">Return to examination</button>
+      <button id="dontBtn" class="outline">Close this tab</button>
+    </div>
+    <small>Copyright © 2026 by John Rish Ladica</small>
+  </main>
+  <script src="config.js"></script>
+  <script src="blocked.js"></script>
+</body>
+</html>

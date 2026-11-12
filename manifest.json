@@ -1,0 +1,97 @@
+{
+  "manifest_version": 3,
+  "name": "GUARD++ | SLSU Exam Integrity",
+  "short_name": "GUARD++",
+  "version": "1.0.0.3",
+  "description": "Transparent exam-integrity companion for SLSU Moodle quizzes: restricts AI and answer sites, disables copy/paste during an attempt, and keeps a local activity report.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "webNavigation",
+    "declarativeNetRequest",
+    "alarms"
+  ],
+  "host_permissions": [
+    "https://lms.southernleytestateu.edu.ph/*",
+    "https://*.chatgpt.com/*",
+    "https://*.chat.openai.com/*",
+    "https://*.openai.com/*",
+    "https://*.gemini.google.com/*",
+    "https://*.aistudio.google.com/*",
+    "https://*.notebooklm.google.com/*",
+    "https://*.bard.google.com/*",
+    "https://*.claude.ai/*",
+    "https://*.copilot.microsoft.com/*",
+    "https://*.perplexity.ai/*",
+    "https://*.chat.deepseek.com/*",
+    "https://*.deepseek.com/*",
+    "https://*.grok.com/*",
+    "https://*.x.ai/*",
+    "https://*.meta.ai/*",
+    "https://*.poe.com/*",
+    "https://*.you.com/*",
+    "https://*.chat.mistral.ai/*",
+    "https://*.character.ai/*",
+    "https://*.phind.com/*",
+    "https://*.blackbox.ai/*",
+    "https://*.chat.qwen.ai/*",
+    "https://*.kimi.com/*",
+    "https://*.chegg.com/*",
+    "https://*.coursehero.com/*",
+    "https://*.brainly.com/*",
+    "https://*.studocu.com/*",
+    "https://*.quizlet.com/*",
+    "https://*.bartleby.com/*",
+    "https://*.studypool.com/*",
+    "https://*.numerade.com/*",
+    "https://*.gauthmath.com/*",
+    "https://*.socratic.org/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "GUARD++",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_page": "dashboard.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://lms.southernleytestateu.edu.ph/*"
+      ],
+      "js": [
+        "config.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "blocked.html"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "minimum_chrome_version": "116",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "version_name": "1.0.0.3"
+}

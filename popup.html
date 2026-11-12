@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GUARD++</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/icon32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/icon16.png">
+  <link rel="apple-touch-icon" href="icons/icon128.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="popup">
+  <header class="topbar">
+    <img src="slsu-logo.png" alt="Southern Leyte State University seal">
+    <div><strong>GUARD++</strong><small>SLSU Examination Integrity</small></div>
+    <span id="statusDot" class="dot"></span>
+  </header>
+  <main>
+    <section class="status-panel">
+      <span class="eyebrow">PROTECTION STATUS</span>
+      <h1 id="statusTitle">Checking status…</h1>
+      <p id="statusText">Checking for an active quiz attempt.</p>
+      <div class="metrics">
+        <div><strong id="strikes">0 / 3</strong><span>Restricted attempts</span></div>
+        <div><strong id="eventCount">0</strong><span>Session events</span></div>
+      </div>
+      <button id="startBtn" class="primary" hidden>Start test session</button>
+      <button id="stopBtn" class="secondary" hidden>Stop test session</button>
+      <p id="message" role="status"></p>
+    </section>
+    <section class="blocked-sites">
+      <h2>Must read:</h2>
+      <ul id="siteList"></ul>
+      <b>Protection starts automatically when you open a quiz attempt</b> and ends when the attempt is submitted. <b>Copy, paste and right-click are disabled</b> on the quiz page.
+    </section>
+    <button id="dashboardBtn" class="dashboard-button">Open activity report</button>
+    <p class="fineprint">Copyright © 2026 by John Rish Ladica</p>
+  </main>
+  <script src="config.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

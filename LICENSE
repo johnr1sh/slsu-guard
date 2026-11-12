@@ -1,21 +1,46 @@
-MIT License
+PROPRIETARY SOFTWARE LICENSE
+GUARD++
 
-Copyright (c) 2026 John Rish ladica
+Copyright (c) 2026 GUARD++ Project Owner. All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. OWNERSHIP
+This software, including its source code, object code, documentation, configuration,
+graphics, designs, and related materials (collectively, the "Software"), is proprietary
+and remains the exclusive property of its lawful owner.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+2. NO PUBLIC LICENSE
+No permission, license, or other right is granted to any person by possession of,
+access to, or receipt of this Software, except for rights that cannot lawfully be
+excluded. No open-source license applies to this Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+3. RESTRICTIONS
+Without the owner's prior express written permission, you may not, directly or indirectly:
+- copy, reproduce, publish, upload, distribute, transmit, or make the Software available;
+- disclose, share, sell, rent, lease, sublicense, or commercially exploit the Software;
+- modify, adapt, translate, merge, or create derivative works from the Software;
+- reverse engineer, decompile, or disassemble the Software, except to the extent
+  such restriction is prohibited by applicable law;
+- remove, alter, or obscure copyright, authorship, proprietary, or attribution notices;
+- claim, register, or represent yourself or another party as the creator, author, or owner
+  of the Software or any part of it.
+
+4. LIMITED AUTHORIZED USE
+Any evaluation, installation, or use is permitted only where the owner has expressly
+authorized it in writing, and only within the scope of that authorization. Access does
+not transfer ownership or create an implied license.
+
+5. NO WARRANTY
+To the maximum extent permitted by applicable law, the Software is provided "AS IS",
+without warranties of any kind, express or implied.
+
+6. TERMINATION
+Any permission granted under a separate written authorization terminates automatically
+if its conditions are breached. Upon termination, all copies in the recipient's
+possession or control must be deleted, subject to applicable law.
+
+7. GOVERNING LAW
+This notice is subject to applicable law. Nothing in it excludes rights or remedies
+that cannot legally be excluded.
+
+For written permission, contact the lawful owner through an independently verified
+official contact channel.

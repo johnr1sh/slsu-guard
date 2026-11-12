@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GUARD++ Activity Report</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/icon32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/icon16.png">
+  <link rel="apple-touch-icon" href="icons/icon128.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard">
+  <header class="dashboard-header">
+    <div class="identity">
+      <img src="slsu-logo.png" alt="SLSU logo">
+      <div><strong>GUARD++</strong><small>Examination activity report</small></div>
+    </div>
+    <div class="header-actions">
+      <button id="csvBtn" class="secondary">Export CSV</button>
+      <button id="jsonBtn" class="secondary">Export JSON</button>
+      <button id="clearBtn" class="quiet">Clear history</button>
+    </div>
+  </header>
+  <main class="dashboard-main">
+    <section class="intro">
+      <h1>Review Report</h1>
+      <p>Review recorded browser events and restricted-site attempts.</p>
+    </section>
+    <section class="stats">
+      <article><span>Sessions</span><strong id="sessions">0</strong></article>
+      <article><span>Restricted attempts</span><strong id="attempts">0</strong></article>
+      <article><span>Flagged for review</span><strong id="flagged">0</strong></article>
+      <article><span>Protection status</span><strong id="active">Off</strong></article>
+    </section>
+    <label class="toolbar"><input type="checkbox" id="flaggedOnly"> Show flagged sessions only</label>
+    <div id="sessionList" class="session-list"></div>
+    <p class="privacy">Copyright © 2026 by John Rish Ladica</p>
+  </main>
+  <script src="config.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
