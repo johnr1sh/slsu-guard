@@ -1,3 +1,5 @@
+<p align="center"> <img src="slsu-logo.png" alt="Southern Leyte State University seal" width="140"> </p> <h1 align="center">GUARD++</h1> <p align="center"><strong>SLSU Examination Integrity</strong> &middot; Version 1.0.0.4</p>
+
 # GUARD++ — Version 1.0.0.3
 
 Chrome Manifest V3 extension for authorized integrity monitoring of Moodle quizzes on
